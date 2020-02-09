@@ -18,6 +18,13 @@ public class Main2Activity extends AppCompatActivity {
         textView2 = (TextView) findViewById(R.id.textView2);
         Intent intent = getIntent();
         String str = intent.getStringExtra("message");
-        textView2.setText("Hello " + str);
+        double myNum = 0;
+        try {
+            myNum = Double.parseDouble(str);
+            myNum = myNum * 0.77;
+        } catch(NumberFormatException nfe) {
+
+        }
+        textView2.setText(String.valueOf(myNum));
     }
 }
