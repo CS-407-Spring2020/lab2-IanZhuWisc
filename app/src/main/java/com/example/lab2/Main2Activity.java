@@ -25,6 +25,6 @@ public class Main2Activity extends AppCompatActivity {
         } catch(NumberFormatException nfe) {
 
         }
-        textView2.setText(String.valueOf(myNum));
+        textView2.setText("£" + String.valueOf(myNum));
     }
 }
